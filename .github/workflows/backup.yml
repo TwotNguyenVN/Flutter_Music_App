@@ -1,10 +1,8 @@
 name: Supabase Database Backup
 
 on:
-  schedule:
-    # Tự động chạy lúc 00:00 hàng ngày (theo giờ UTC)
-    # Tương đương 07:00 sáng hàng ngày theo giờ Việt Nam (UTC+7)
-    - cron: "0 0 * * *"
+  # Đã tắt backup tự động hằng ngày để tránh làm phình lịch sử Git.
+  # Có thể kích hoạt thủ công nếu cần.
   workflow_dispatch: # Cho phép kích hoạt thủ công từ giao diện GitHub
 
 jobs:
